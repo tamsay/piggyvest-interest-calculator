@@ -66,8 +66,15 @@ body{
 }
 .navbar a{
     color: white;
+    text-decoration-line: none;
+}
+.navbar a:hover{
+    text-decoration-line: underline;
 }
 
+.navbar a:active{
+    text-decoration-line: underline;
+}
 #mainDiv{
     background-color: white;
     padding: 2rem 2rem 2.5rem 2rem;
