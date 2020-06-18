@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+body{
+    background-color: red;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", Karla;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 0.5em 0em 0em 0em;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#sidebar{
+    background-color: #062863;
+    display: flex;
+    flex-direction: column;
+}
+
+#navHeader{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 0em 1em;
+    margin: 2em 0em 5em 0em;        
+}
+#navHeader div:nth-child(1){
+    padding: 0em;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    /* background-color: greenyellow; */
+}
+#navHeader div:nth-child(1) img{
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    height: auto;
+    width: 50%;
+}
+#navHeader div:nth-child(2){
+    display: flex;
+    align-items: center;
+    padding: 0em;
+    margin-left: 5px;
+    /* width: 20%; */
+    /* background-color: red; */
+}
+#logo img{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+#menu{
+    /* background-color: rgb(73, 221, 189); */
+}
+.navbar{
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+.navbar li{
+    list-style-type: none;
+    margin: 2.5em;
+}
+.navbar a{
+    color: white;
+}
+
+#mainDiv{
+    background-color: white;
+    padding: 2rem 2rem 2.5rem 2rem;
+    /* border-radius: 1.25rem 1.25rem 1.25rem 0; */
+    text-align: center;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 0;
+}
+h1{
+    font-size: 2rem;
+    color: #083e9e;
+    text-align: center;
+    font-weight: 700;
+    font-family: U8, sans-serif;
+    margin: 0;
+    border: 0;
+    font-weight: bold;
+}
+#introCaption{
+    font-size: 0.875rem;
+    color: #4a5568;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    border: 0;
+    line-height: 1.5;
+}
+#parameters{
+    display: flex;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* height: min-content; */
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.outerDiv{
+    border: 1px solid #062863;
+    background-color: white;
+    width: 25%;
+    margin: 0.5em;
+    height: 100%;
+    border-radius: 10px 10px 10px 0px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-rows: 75% 25%; */
+    /* flex-direction: column; */
+    box-sizing: border-box;
+}
+.outerDiv div:first-child{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+    height: 70%;
+    background-color: red;
+    box-sizing: border-box;
+}
+.outerDiv div:last-child{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 50%;
+}
+.outerDiv div:last-child p{
+    width: fit-content;
+    margin: 0px;
+}
+.outerDiv img{
+    width: 100%;
+}
+
+#investmentPlanDiv p{
+    display: none;
+    margin-bottom: 0.75em;
+    font-size: 1em;
+    font-weight: 450;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-size: 1em;
+    color: #4a5568;
+    margin-bottom: 0.25em;
+    padding: 0px 5px;
+    margin-top: 0.25em;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    border: 0px solid #e2e8f0;
+    box-sizing: inherit;
+    text-align: center;
+}
+#parameters input{
+    color: #1a202c;
+    border-radius: 0.5em 0.5em 0.5em 0em;
+    padding: 0.25em;
+    background-color: #edf2f7;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    border: 1px solid none;
+    width: 90%;
+    box-sizing: border-box;
+    cursor: text;
+    font: bold 1em Arial;
+}
+#rate{
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.select{
+    color: #1a202c;
+    background-color: #edf2f7;
+    display: block;
+	font: 400 1rem Arial;
+	line-height: 1;
+	padding: 0rem;
+    width: 95%;
+    text-align: center;
+	box-sizing: border-box;
+    margin-bottom: 1.5em;
+    margin-top: 0.25em;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: 0.5em;	
+    
+}
+.select:focus {
+	border-color: rgba(59, 153, 252, .7);
+	box-shadow: 0 0 1px 1px rgba(59, 153, 252, .7);
+	color: #222;
+	outline: none;
+}
+.select option {
+    font-weight:700;
+}  
+button{
+    font-family: U8,sans-serif;
+    background-color: rgb(8, 62, 158);
+    /* width: 100%; */
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem 0.75rem 0.75rem 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+#resultSection{
+    display: flex;
+    justify-content: center;
+}
+
+#resultSection div{
+    /* border: 1px solid black; */
+    margin: 1em;
+    width: 50%;
+    padding: 0px;
+}
+#resultSection h2{
+    margin: 0px 0px 5px 0px;
+}
+#resultSection p{
+    margin: 0px;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: karla;
+}
+
+
+@media only and (max-width:)

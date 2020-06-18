@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div id="sidebar">
+        
+
+            <div id="navHeader">
+                <div >
+                    <img src="images/logo.png" alt="piggylogo">
+                </div>
+                <div id="logo">
+                    <a href="#"><img src="images/logo.svg" alt="logo"></a>
+                </div>
+            </div>
+
+            <div id="menu">
+                <nav>
+                    <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="#home"><i class="fa fa-fw fa-home nav-link"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services"><i class="fa fa-fw fa-wrench nav-link"></i> Savings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients"><i class="fa fa-fw fa-user nav-link"></i> Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients"><i class="fa fa-fw fa-user nav-link"></i> Interest Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact"><i class="fa fa-fw fa-envelope nav-link"></i> Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients"><i class="fa fa-fw fa-user nav-link"></i> Logout</a>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        
+        
+          
+    </div>
+    
+    <div id="mainDiv">
+        <header>
+            <h1>Interest Calculator</h1>
+            <p id="introCaption">Welcome to the future of Savings & Investments</p>
+        </header>
+        
+        <section id="parameters">
+            <div id="investmentPlanDiv" class="outerDiv">
+                <div>
+                    <img src="images/portfolio.png" alt="investment plan">
+                </div>
+                <div>
+                    <select id="plans" name="plans" class="select"> 
+                        <option value="">Select Plan</option>
+                        <option value="maize">Maize Farming</option>
+                        <option value="transport">Transportation</option>
+                        <option value="estate">Real Estate</option>
+                        <option value="uber">Uber</option>
+                    </select>
+                    <p id="basePrice">Base Price <span></span></p>    
+                </div>
+            </div>
+
+            <div class="outerDiv">
+                <div>
+                    <img src="images/interest.png" alt="investment plan">
+                </div>
+
+                <div>
+                    <label for="interest">Interest Rate</label>
+                    <p id="rate"><span id="rateDisplay">0</span> %</p>
+                </div>
+            </div>
+
+            <div id="unitsDiv" class="outerDiv">
+                <div>
+                    <img src="images/units.png" alt="investment plan">
+                </div>
+                <div>
+                    <label for="units">How many units are you buying?</label>
+                    <input type="Number" >
+                </div>
+            </div>
+
+            <div id="monthsDiv" class="outerDiv">
+                <div>
+                    <img src="images/calendar.jpg" alt="investment plan">
+                </div>
+                <div>
+                    <label for="months">How long do you want to invest?</label>
+                    <input type="number">
+                </div>
+            </div>
+
+            
+
+        </section>
+        
+        <button type="button" id="calcInterestBtn">Calculate Interest</button>
+
+        <div id="resultSection">
+            <div>
+                <h2>Amount Invested</h2>
+                <p id="total"></p>
+            </div>
+
+            <div>
+                <h2>Interest</h2>
+                <p id="interest"></p>
+            </div>
+        </div>
+        
+    </form>
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
