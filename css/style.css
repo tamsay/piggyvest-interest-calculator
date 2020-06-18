@@ -28,7 +28,6 @@ body{
     margin-right: 5px;
     display: flex;
     align-items: center;
-    /* background-color: greenyellow; */
 }
 #navHeader div:nth-child(1) img{
     padding: 0%;
@@ -80,7 +79,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0;
     margin: 0rem 0rem 2rem 0rem;
     padding: 0;
 }
@@ -119,9 +117,6 @@ h1{
     padding: 0.5em;
     display: flex;
     flex-direction: column;
-    /* display: grid;
-    grid-template-rows: 75% 25%; */
-    /* flex-direction: column; */
     box-sizing: border-box;
 }
 .outerDiv div:first-child{
@@ -130,7 +125,6 @@ h1{
     justify-content: center;
     padding: 5px;
     height: 70%;
-    /* background-color: red; */
     box-sizing: border-box;
 }
 .outerDiv div:last-child{
@@ -150,7 +144,7 @@ h1{
 }
 
 #investmentPlanDiv p{
-    display: none;
+    visibility: hidden;
     margin-bottom: 0.75em;
     font-size: 1em;
     font-weight: 450;
@@ -255,4 +249,517 @@ button{
 }
 
 
-/* @media only and (max-width:) */
+@media all and (max-width:375px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar{
+        padding-top: 0em;
+    }
+    #navHeader{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 1em;
+    }
+    #navHeader div:nth-child(1){
+        display: none;
+    }
+    #navHeader div:nth-child(2){
+        justify-content: center;
+        margin: auto;
+    }
+    .navbar{
+        display: flex;
+        padding: 0%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        justify-content: center;
+    }
+    .navbar li{
+        margin: 0px 5px 0px 0px;
+        padding: 0px;
+    }
+    .navbar a{
+        color: white;
+        font-size: 0.75em;
+        text-decoration-line: none;
+    }
+    .navbar a:hover{
+        text-decoration-line: underline;
+    }
+    .navbar a:active{
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+    .fa{
+        display: none;
+    }
+    #mainDiv{
+        background-color: white;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    header{
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    #introCaption{
+        font-size: 0.85rem;
+    }
+    #parameters{
+        flex-wrap: wrap;
+    }
+    .outerDiv{
+        width: 45%;
+        margin: 0.45em;
+        padding: 0.25em;
+    }
+    .outerDiv div:first-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 5px;
+        height: 50%;
+        box-sizing: border-box;
+    }
+    
+    .outerDiv img{
+        width: 75%;
+    }
+    
+    #investmentPlanDiv p{
+        margin-bottom: 1em;
+        font-size: 0.9em;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+        font-size: 0.9em;
+    }
+    .select{
+        font: 400 0.8rem Arial;
+        line-height: 1;
+        padding: 0rem;
+        width: 85%;
+        margin-bottom: 1.5em;
+        margin-top: 0.75em;
+    }
+    button{
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        margin-top: 1em;
+    }
+    
+    #resultSection div{
+        margin: 0.25em;
+        width: 100%;
+        padding: 0px;
+    }
+    #resultSection h2{
+        margin: 0px 0px 5px 0px;
+        font-size: 1em;
+        text-decoration-line: underline;
+    }
+    #resultSection p{
+        margin: 0px;
+        font-size: 1.5em;
+        font-weight: bolder;
+        font-family: karla;
+    }    
+}
+@media all and (min-width:376px) and (max-width:480px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar{
+        padding-top: 0em;
+    }
+    #navHeader{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 1em;
+    }
+    #navHeader div:nth-child(1){
+        display: none;
+    }
+    #navHeader div:nth-child(2){
+        justify-content: center;
+        margin: auto;
+    }
+    .navbar{
+        display: flex;
+        padding: 0%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        justify-content: center;
+    }
+    .navbar li{
+        margin: 0px 2px 0px 0px;
+        padding: 0px;
+    }
+    .navbar a{
+        color: white;
+        font-size: 0.75em;
+        text-decoration-line: none;
+    }
+    .navbar a:hover{
+        text-decoration-line: underline;
+    }
+    .navbar a:active{
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+    #mainDiv{
+        background-color: white;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    header{
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #introCaption{
+        font-size: 1rem;
+    }
+    #parameters{
+        flex-wrap: wrap;
+    }
+    .outerDiv{
+        width: 45%;
+        margin: 0.6em;
+        padding: 0.25em;
+    }
+    .outerDiv div:first-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 5px;
+        height: 50%;
+        box-sizing: border-box;
+    }
+    
+    .outerDiv img{
+        width: 85%;
+    }
+    
+    #investmentPlanDiv p{
+        margin-bottom: 0.75em;
+        font-size: 0.9em;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+        font-size: 1em;
+    }
+    .select{
+        font: 400 1rem Arial;
+        line-height: 1;
+        padding: 0rem;
+        width: 85%;
+        margin-bottom: 1.25em;
+        margin-top: 0.75em;
+    }
+    button{
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        margin-top: 1em;
+    }
+    
+    #resultSection div{
+        margin: 0.25em;
+        width: 100%;
+        padding: 0px;
+    }
+    #resultSection h2{
+        margin: 0px 0px 5px 0px;
+        font-size: 1.25em;
+        text-decoration-line: underline;
+    }
+    #resultSection p{
+        margin: 0px;
+        font-size: 2em;
+        font-weight: bolder;
+        font-family: karla;
+    }    
+}
+
+@media all and (min-width:481px) and (max-width:767px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar{
+        padding-top: 0em;
+    }
+    #navHeader{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 1em;
+    }
+    #navHeader div:nth-child(1){
+        display: none;
+    }
+    #navHeader div:nth-child(2){
+        justify-content: center;
+        margin: auto;
+    }
+    .navbar{
+        display: flex;
+        padding: 0%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        justify-content: center;
+    }
+    .navbar li{
+        margin: 0px 5px 0px 0px;
+        padding: 0px;
+    }
+    .navbar a{
+        color: white;
+        font-size: 1.25em;
+        text-decoration-line: none;
+    }
+    .navbar a:hover{
+        text-decoration-line: underline;
+    }
+    .navbar a:active{
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+    #mainDiv{
+        background-color: white;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    header{
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    #introCaption{
+        font-size: 1.5rem;
+    }
+    #parameters{
+        flex-wrap: wrap;
+    }
+    .outerDiv{
+        width: 45%;
+        margin: 1.1em;
+        padding: 0.25em;
+    }
+    .outerDiv div:first-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 5px;
+        height: 50%;
+        box-sizing: border-box;
+    }
+    
+    .outerDiv img{
+        width: 75%;
+    }
+    
+    #investmentPlanDiv p{
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+        font-size: 1.5em;
+    }
+    #rate{
+        font-size: 2em;
+        margin: 0.25em 0em 0.25em 0em;
+    }
+    .select{
+        font: 400 1.5rem Arial;
+        line-height: 1;
+        padding: 0rem;
+        width: 85%;
+        margin-bottom: 0.75em;
+        margin-top: 0.25em;
+    }
+    button{
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin-top: 1em;
+    }
+    
+    #resultSection div{
+        margin-top: 2em;
+        width: 100%;
+        padding: 0px;
+    }
+    #resultSection h2{
+        margin: 0px 0px 5px 0px;
+        font-size: 2em;
+        text-decoration-line: underline;
+    }
+    #resultSection p{
+        margin: 0px;
+        font-size: 3.5em;
+        font-weight: bolder;
+        font-family: karla;
+    }    
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar{
+        padding-top: 0em;
+    }
+    #navHeader{
+        display: flex;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 1em;
+    }
+    #navHeader div:nth-child(1){
+        display: none;
+    }
+    #navHeader div:nth-child(2){
+        justify-content: center;
+        margin: auto;
+    }
+    .navbar{
+        display: flex;
+        padding: 0%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        justify-content: center;
+    }
+    .navbar li{
+        margin: 0px 10px 0px 0px;
+        padding: 0px;
+    }
+    .navbar a{
+        color: white;
+        font-size: 1.3em;
+        text-decoration-line: none;
+    }
+    .navbar a:hover{
+        text-decoration-line: underline;
+    }
+    .navbar a:active{
+        font-weight: bolder;
+        text-decoration-line: underline;
+    }
+    #mainDiv{
+        background-color: white;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    header{
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    #introCaption{
+        font-size: 1.75rem;
+    }
+    #parameters{
+        flex-wrap: wrap;
+    }
+    .outerDiv{
+        width: 45%;
+        margin: 1em;
+        padding: 0.25em;
+    }
+    .outerDiv div:first-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 5px;
+        height: 50%;
+        box-sizing: border-box;
+    }
+    
+    .outerDiv img{
+        width: 50%;
+    }
+    
+    #investmentPlanDiv p{
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label{
+        font-size: 2em;
+    }
+    #rate{
+        margin-top: 1em;
+        margin-bottom: 0.75em;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #parameters input{
+        color: #1a202c;
+        border-radius: 0.5em 0.5em 0.5em 0em;
+        padding: 0.25em;
+        background-color: #edf2f7;
+        text-align: center;
+        margin: 0px 0px 5px 0px;
+        border: 1px solid none;
+        width: 90%;
+        box-sizing: border-box;
+        cursor: text;
+        font: bold 2em Arial;
+    }    
+    .select{
+        font: 400 1.75rem Arial;
+        line-height: 1;
+        padding: 0rem;
+        width: 85%;
+        margin-bottom: 1.25em;
+        margin-top: 0.75em;
+    }
+    button{
+        font-size: 2rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    #resultSection div{
+        margin: 0.25em;
+        width: 100%;
+        padding: 0px;
+    }
+    #resultSection h2{
+        margin: 0px 0px 5px 0px;
+        font-size: 2em;
+        text-decoration-line: underline;
+    }
+    #resultSection p{
+        margin: 0px;
+        font-size: 3.25em;
+        font-weight: bolder;
+        font-family: karla;
+    }    
+}

@@ -13,14 +13,14 @@ let totalAmountSpan = document.querySelector('#total')
        
 investmentGroup.addEventListener('change', ()=>{
     displayInterest()
-    basePriceDisplay.style.display = 'block'
+    basePriceDisplay.style.visibility = 'visible'
     baseDisplay.innerText = getBasePrice(getPlan());
 }) 
 
 let plansObj = [
     {plan: '', interest: 0, basePrice: 0},
     {plan: 'Maize', interest: 20, basePrice: 5000},
-    {plan: 'Transport', interest: 25, basePrice: 10000},
+    {plan: 'Transport', interest: 25, basePrice: 99999},
     {plan: 'Estate', interest: 30, basePrice: 1500},
     {plan: 'Uber', interest: 15, basePrice: 50000},
 ]
